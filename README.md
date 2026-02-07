@@ -4,7 +4,7 @@ A lightweight CLI tool built in Go to generate visual directory tree structures.
 
 ## Installation
 
-Ensure you have Go installed, then run:
+Make sure you have Go installed, then run:
 
 ```bash
 go install github.com/vassn/treegen@latest
