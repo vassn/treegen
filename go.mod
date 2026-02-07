@@ -1,4 +1,4 @@
-module treegen
+module github.com/vassn/treegen
 
 go 1.25.6
 

@@ -1,6 +1,7 @@
 package main
 
-import "treegen/cmd"
+import "github.com/vassn/treegen/cmd"
+
 
 func main() {
 	cmd.Execute()

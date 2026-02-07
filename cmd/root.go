@@ -4,7 +4,8 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
-	"treegen/internal"
+
+	"github.com/vassn/treegen/internal"
 
 	"github.com/atotto/clipboard"
 	"github.com/spf13/cobra"
