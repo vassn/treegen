@@ -31,6 +31,10 @@ var rootCmd = &cobra.Command{
 
 		result := internal.RenderTree(targetPath)
 
+		if !quiet {
+			fmt.Print(result)
+		}
+		
 		if copyToClipboard {
 			if err := clipboard.WriteAll(result); err != nil {
 				return fmt.Errorf("failed to copy to clipboard: %w", err)
@@ -45,9 +49,6 @@ var rootCmd = &cobra.Command{
 			fmt.Fprintf(os.Stderr, "✔  Output saved to: %s\n", outputPath)
 		}
 
-		if !quiet {
-			fmt.Print(result)
-		}
 
 		return nil
 	},
